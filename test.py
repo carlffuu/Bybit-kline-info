@@ -9,25 +9,25 @@ json_data = json.loads(data)
 json_info = json.loads(info)
 
 data_result = Data_Result_entry(
-	category = 		json_data['result']['category'],
-	symbol = 		json_data['result']['symbol']
+	category = 	json_data['result']['category'],
+	symbol = 	json_data['result']['symbol']
 	)
 
 data_response = Data_Response_entry(
-	retCode = 		json_data['retCode'],
-	retMsg = 		json_data['retMsg'],
+	retCode = 	json_data['retCode'],
+	retMsg = 	json_data['retMsg'],
 	retExtInfo = 	json_data['retExtInfo'],
-	time = 			json_data['time']
+	time = 		json_data['time']
 	)
 
 data_list = Data_List_entry(
 	startTime = 	json_data['result']['list'][lookback][0],
 	openPrice = 	json_data['result']['list'][lookback][1],
 	highPrice = 	json_data['result']['list'][lookback][2],
-	lowPrice = 		json_data['result']['list'][lookback][3],
+	lowPrice = 	json_data['result']['list'][lookback][3],
 	closePrice = 	json_data['result']['list'][lookback][4],
-	volume = 		json_data['result']['list'][lookback][5],
-	turnover = 		json_data['result']['list'][lookback][6]
+	volume = 	json_data['result']['list'][lookback][5],
+	turnover = 	json_data['result']['list'][lookback][6]
 	)
 
 info_result = Info_Result_entry(
@@ -35,25 +35,25 @@ info_result = Info_Result_entry(
 )
 
 info_response = Info_Response_entry(
-	retCode = 		json_info['retCode'],
-	retMsg = 		json_info['retMsg'],
+	retCode = 	json_info['retCode'],
+	retMsg = 	json_info['retMsg'],
 	retExtInfo = 	json_info['retExtInfo'],
-	time = 			json_info['time']
+	time = 		json_info['time']
 	)
 
 info_list = Info_List_entry(
-	symbol = 		json_info['result']['list'][0]['symbol'],
-	baseCoin = 		json_info['result']['list'][0]['baseCoin'],
+	symbol = 	json_info['result']['list'][0]['symbol'],
+	baseCoin = 	json_info['result']['list'][0]['baseCoin'],
 	quoteCoin = 	json_info['result']['list'][0]['quoteCoin'],
 	innovation = 	json_info['result']['list'][0]['innovation'],
-	status = 		json_info['result']['list'][0]['status'],
+	status = 	json_info['result']['list'][0]['status'],
 	basePrecision = json_info['result']['list'][0]['lotSizeFilter']['basePrecision'],
 	quotePrecision = json_info['result']['list'][0]['lotSizeFilter']['quotePrecision'],
 	minOrderQty = 	json_info['result']['list'][0]['lotSizeFilter']['minOrderQty'],
 	maxOrderQty = 	json_info['result']['list'][0]['lotSizeFilter']['maxOrderQty'],
 	minOrderAmt = 	json_info['result']['list'][0]['lotSizeFilter']['minOrderAmt'],
 	maxOrderAmt = 	json_info['result']['list'][0]['lotSizeFilter']['maxOrderAmt'],
-	tickSize = 		json_info['result']['list'][0]['priceFilter']['tickSize'],
+	tickSize = 	json_info['result']['list'][0]['priceFilter']['tickSize'],
 	)
 
 #data
