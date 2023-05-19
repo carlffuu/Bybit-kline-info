@@ -38,8 +38,8 @@ class Data_Result_entry:
 	result { category, symbol }
 	"""
 	def __init__(self, category, symbol):
-		self.category = 	category
-		self.symbol = 		symbol
+		self.category = category
+		self.symbol = 	symbol
 
 class Data_List_entry:
 	"""
@@ -90,18 +90,18 @@ class Info_List_entry:
 	"""
 	def __init__(self, symbol, baseCoin, quoteCoin, innovation, status, basePrecision,
 		quotePrecision, minOrderQty, maxOrderQty, minOrderAmt, maxOrderAmt, tickSize):
-		self.symbol = 			symbol
-		self.baseCoin = 		baseCoin
-		self.quoteCoin = 		quoteCoin
-		self.innovation = 		bool(innovation)
-		self.status = 			status
+		self.symbol = 		symbol
+		self.baseCoin = 	baseCoin
+		self.quoteCoin = 	quoteCoin
+		self.innovation = 	bool(innovation)
+		self.status = 		status
 		self.basePrecision = 	basePrecision
 		self.quotePrecision = 	quotePrecision
-		self.minOrderQty = 		minOrderQty
-		self.maxOrderQty = 		maxOrderQty
-		self.minOrderAmt = 		minOrderAmt
-		self.maxOrderAmt = 		maxOrderAmt
-		self.tickSize = 		tickSize
+		self.minOrderQty = 	minOrderQty
+		self.maxOrderQty = 	maxOrderQty
+		self.minOrderAmt = 	minOrderAmt
+		self.maxOrderAmt = 	maxOrderAmt
+		self.tickSize = 	tickSize
 
 class Info_Response_entry:
 	"""
