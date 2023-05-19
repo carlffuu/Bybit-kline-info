@@ -1,0 +1,11 @@
+{
+	"exchange":
+	{
+		"key": "EKim1rHsFKKuAKybhe",
+		"secret": "XhEbHQpwNpUpoDIwFdG3YAzRdrzvp5oyBhob"
+	},
+	"category": "spot",
+	"interval": 5,
+	"limit": 200,
+	"symbol": "BTCUSDT"
+}
